@@ -13,6 +13,5 @@ public interface EmployeeService {
    public Account getAccount(Integer branchId,Integer accountId);
    public List<Account> getAllAccount();
    public double deposit(Integer branchId,Integer accountId,Integer amount);
-   public double withdraw(Integer branchId,Integer accountId,Integer amount);
-   
+   public double withdraw(Integer branchId,Integer accountId,Integer amount); 
 }

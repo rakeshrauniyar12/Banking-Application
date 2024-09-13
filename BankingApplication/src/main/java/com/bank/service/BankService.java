@@ -10,5 +10,4 @@ public interface BankService {
    public BankBranch getBranchById(Integer branchId);
    public List<Account> getAllAccountByBranch(Integer branchId);
    public double getAllAmountByBranch(Integer branchId);
-   
 }

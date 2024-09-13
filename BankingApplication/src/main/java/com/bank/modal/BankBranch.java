@@ -7,6 +7,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,12 +17,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 public class BankBranch {
-	private Integer bankId;
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
     private Integer bankBranchId;
     private String branchName;
     private String branchAddress;
+    @OneToOne
+	private Integer bankId;
     @OneToMany
     private List<Employee> employees;
     private double totalAmount;

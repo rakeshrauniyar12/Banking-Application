@@ -7,7 +7,6 @@ import com.bank.modal.Employee;
 
 public interface EmployeeService {
    public Employee login(Integer employeeId,String password);	
-   public Account createAccount(Account account);
    public Account updateAccount(Account account);
    public Account deleteAccount(Integer branchId,Integer accountId);
    public Account getAccount(Integer branchId,Integer accountId);
